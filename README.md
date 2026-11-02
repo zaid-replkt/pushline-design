@@ -4,7 +4,9 @@ Everything needed to build the game. All names are placeholders pending trademar
 
 | File | What it is |
 | --- | --- |
-| `pushline_gdd.md` | Game Design Document (Markdown export of the live doc) |
+| `pushline_gdd.md` | Game Design Document (Markdown export of the live doc, 79 KB) |
+| `gdd/` | The same GDD split into one file per section (see `gdd/INDEX.md`) for readers that truncate long documents |
+| `diagrams.md` | Both diagrams as text, so nothing depends on viewing the PNGs |
 | `pushline_content.json` | 40 units, 72 enemies, 270 stages with waves and triggers, in the GDD Section 14.3 schema |
 | `csv/stages.csv` | One row per stage, all 270 (waves, triggers, stars, rewards, unlocks, threat index) |
 | `csv/units.csv` | 40 units with stats, unlock source, Form II and Form III |
@@ -32,7 +34,7 @@ https://raw.githubusercontent.com/zaid-replkt/pushline-design/main/battle_loop.p
 https://raw.githubusercontent.com/zaid-replkt/pushline-design/main/production_timeline.png
 ```
 
-Or `git clone https://github.com/zaid-replkt/pushline-design`.
+**Recommended for agents:** `git clone https://github.com/zaid-replkt/pushline-design` and read from disk. Web readers often truncate `pushline_gdd.md` and `pushline_content.json`; the clone does not.
 
 ## Schema notes (for an agent)
 
