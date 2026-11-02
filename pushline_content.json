@@ -31148,13 +31148,90 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Loadout of 6 cards",
+   "ruleParams": {
+    "loadoutSize": 6
+   },
    "new": "",
    "enemyBaseHp": 39500,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 300,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "spore_capguard",
+     "count": 1,
+     "gapS": 3
+    },
+    {
+     "at": 30,
+     "spawn": "spore_mycelid",
+     "count": 2,
+     "gapS": 1.5
+    },
+    {
+     "at": 55,
+     "spawn": "spore_mite",
+     "count": 6,
+     "gapS": 0.5
+    },
+    {
+     "at": 80,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 110,
+     "spawn": "spore_capguard",
+     "count": 2,
+     "gapS": 2.5
+    },
+    {
+     "at": 130,
+     "spawn": "spore_mycelid",
+     "count": 2,
+     "gapS": 1.2
+    },
+    {
+     "at": 150,
+     "spawn": "spore_mite",
+     "count": 7,
+     "gapS": 0.5
+    },
+    {
+     "at": 180,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 3
+    },
+    {
+     "at": 210,
+     "spawn": "spore_brute",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 240,
+     "spawn": "spore_capguard",
+     "count": 2,
+     "gapS": 2
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 2,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "spore_mycelid",
+      "count": 3
+     }
+    }
+   ],
    "composition": "World 2 pressure mix: Capguards, Mycelids, Spore Mites, Shellcap at 60 s",
    "answers": "Pick two Pierce units and a Barrage; skip Support",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31164,9 +31241,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 5.01,
+   "ppi": 4.41,
+   "ratio": 1.14,
    "targetRatio": 1.11,
    "hazard": ""
   },
@@ -31180,12 +31258,70 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Bank upgrades disabled; income fixed at level 3",
+   "ruleParams": {
+    "bankLocked": 3
+   },
    "new": "",
    "enemyBaseHp": 39500,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 300,
+   "waves": [
+    {
+     "at": 5,
+     "spawn": "rustling_tinman",
+     "count": 2,
+     "gapS": 1.5
+    },
+    {
+     "at": 30,
+     "spawn": "rustling_rustbucket",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 60,
+     "spawn": "spore_capguard",
+     "count": 2,
+     "gapS": 3
+    },
+    {
+     "at": 90,
+     "spawn": "rustling_rustbucket",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 120,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 150,
+     "spawn": "spore_puffer",
+     "count": 2,
+     "gapS": 2
+    },
+    {
+     "at": 180,
+     "spawn": "rustling_rustbucket",
+     "count": 2,
+     "gapS": 4
+    },
+    {
+     "at": 210,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 240,
+     "spawn": "spore_rotgolem",
+     "count": 1,
+     "gapS": 1.0
+    }
+   ],
    "triggers": [],
    "composition": "World 1-2 chaff and walls on a slow drip",
    "answers": "Cheap units in volume; Scrap and Pebble spam",
@@ -31196,9 +31332,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 5.53,
+   "ppi": 4.41,
+   "ratio": 1.25,
    "targetRatio": 1.12,
    "hazard": ""
   },
@@ -31212,12 +31349,71 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Enemy base 5,000 HP; your base 1,000 HP",
+   "ruleParams": {
+    "enemyBaseHp": 5000,
+    "playerBaseHp": 1000
+   },
    "new": "",
    "enemyBaseHp": 5000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 150,
+   "waves": [
+    {
+     "at": 5,
+     "spawn": "rustling_runner",
+     "count": 2,
+     "gapS": 1
+    },
+    {
+     "at": 20,
+     "spawn": "spore_mycelid",
+     "count": 2,
+     "gapS": 1
+    },
+    {
+     "at": 35,
+     "spawn": "rustling_runner",
+     "count": 2,
+     "gapS": 1
+    },
+    {
+     "at": 50,
+     "spawn": "spore_mycelid",
+     "count": 2,
+     "gapS": 1
+    },
+    {
+     "at": 65,
+     "spawn": "rustling_bolthound",
+     "count": 2,
+     "gapS": 1.5
+    },
+    {
+     "at": 80,
+     "spawn": "spore_mycelid",
+     "count": 2,
+     "gapS": 0.8
+    },
+    {
+     "at": 95,
+     "spawn": "spore_trufflehog",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 110,
+     "spawn": "rustling_runner",
+     "count": 3,
+     "gapS": 0.8
+    },
+    {
+     "at": 125,
+     "spawn": "spore_mycelid",
+     "count": 3,
+     "gapS": 0.8
+    }
+   ],
    "triggers": [],
    "composition": "Runner and Mycelid waves every 15 s",
    "answers": "Breaker rush with Scout screens",
@@ -31228,10 +31424,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.1300000000000001,
+   "anchor": "",
+   "eti": 4.93,
+   "ppi": 4.41,
+   "ratio": 1.12,
+   "targetRatio": 1.13,
    "hazard": ""
   },
   {
@@ -31244,13 +31441,100 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "No Commands; zone bonuses doubled",
+   "ruleParams": {
+    "commandsDisabled": true,
+    "zoneBonusMultiplier": 2
+   },
    "new": "",
    "enemyBaseHp": 39500,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 300,
+   "waves": [
+    {
+     "at": 5,
+     "spawn": "spore_mite",
+     "count": 5,
+     "gapS": 0.5
+    },
+    {
+     "at": 30,
+     "spawn": "spore_capguard",
+     "count": 1,
+     "gapS": 3
+    },
+    {
+     "at": 60,
+     "spawn": "spore_mycelid",
+     "count": 2,
+     "gapS": 1.5
+    },
+    {
+     "at": 90,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 120,
+     "spawn": "spore_spitter",
+     "count": 1,
+     "gapS": 3
+    },
+    {
+     "at": 150,
+     "spawn": "spore_capguard",
+     "count": 2,
+     "gapS": 2.5
+    },
+    {
+     "at": 185,
+     "spawn": "spore_mite",
+     "count": 8,
+     "gapS": 0.5
+    },
+    {
+     "at": 215,
+     "spawn": "spore_brute",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 250,
+     "spawn": "spore_rotgolem",
+     "count": 1,
+     "gapS": 1.0
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 2,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "spore_capguard",
+      "count": 2
+     }
+    },
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 3,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "spore_mycelid",
+      "count": 3,
+      "mods": [
+       "Hasty"
+      ]
+     }
+    }
+   ],
    "composition": "World 2 test mix with Zone 2 trigger reinforcements",
    "answers": "Take and hold Zone 2 early",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31260,10 +31544,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.1400000000000001,
+   "anchor": "",
+   "eti": 5.68,
+   "ppi": 4.41,
+   "ratio": 1.29,
+   "targetRatio": 1.14,
    "hazard": ""
   },
   {
@@ -31276,13 +31561,90 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Lane length 2,000",
+   "ruleParams": {
+    "laneLength": 2000
+   },
    "new": "",
    "enemyBaseHp": 39500,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 420,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "rustling_rustbucket",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 30,
+     "spawn": "rustling_tinman",
+     "count": 3,
+     "gapS": 1.5
+    },
+    {
+     "at": 50,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 100,
+     "spawn": "rustling_rustbucket",
+     "count": 1,
+     "gapS": 5
+    },
+    {
+     "at": 150,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 5
+    },
+    {
+     "at": 200,
+     "spawn": "spore_rotgolem",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 230,
+     "spawn": "spore_mite",
+     "count": 9,
+     "gapS": 0.5
+    },
+    {
+     "at": 260,
+     "spawn": "rustling_junkgolem",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 320,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 4
+    },
+    {
+     "at": 360,
+     "spawn": "spore_rotgolem",
+     "count": 1,
+     "gapS": 1.0
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneLost": {
+       "zone": 1
+      }
+     },
+     "do": {
+      "spawn": "rustling_runner",
+      "count": 3
+     },
+     "once": true
+    }
+   ],
    "composition": "Rust Buckets and Shellcaps spaced along the lane",
    "answers": "Vanguard chain; Rally once unlocked",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31292,10 +31654,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.1500000000000001,
+   "anchor": "Junk Golem",
+   "eti": 4.86,
+   "ppi": 4.41,
+   "ratio": 1.1,
+   "targetRatio": 1.15,
    "hazard": ""
   },
   {
@@ -31308,12 +31671,107 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Endless Swarm; win by surviving 240 s",
+   "ruleParams": {
+    "winCondition": "survive",
+    "surviveS": 240
+   },
    "new": "",
    "enemyBaseHp": 39500,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 240,
+   "waves": [
+    {
+     "at": 5,
+     "spawn": "rustling_scrapling",
+     "count": 8,
+     "gapS": 0.4
+    },
+    {
+     "at": 25,
+     "spawn": "spore_mite",
+     "count": 10,
+     "gapS": 0.4
+    },
+    {
+     "at": 45,
+     "spawn": "rustling_scrapling",
+     "count": 12,
+     "gapS": 0.4
+    },
+    {
+     "at": 65,
+     "spawn": "spore_mite",
+     "count": 14,
+     "gapS": 0.4
+    },
+    {
+     "at": 85,
+     "spawn": "rustling_scrapling",
+     "count": 16,
+     "gapS": 0.4
+    },
+    {
+     "at": 90,
+     "spawn": "rustling_heap",
+     "count": 10,
+     "gapS": 0.5
+    },
+    {
+     "at": 105,
+     "spawn": "spore_mite",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 125,
+     "spawn": "rustling_scrapling",
+     "count": 20,
+     "gapS": 0.4
+    },
+    {
+     "at": 145,
+     "spawn": "spore_mite",
+     "count": 22,
+     "gapS": 0.4
+    },
+    {
+     "at": 150,
+     "spawn": "rustling_heap",
+     "count": 13,
+     "gapS": 0.5
+    },
+    {
+     "at": 165,
+     "spawn": "rustling_scrapling",
+     "count": 24,
+     "gapS": 0.4
+    },
+    {
+     "at": 185,
+     "spawn": "spore_mite",
+     "count": 26,
+     "gapS": 0.4
+    },
+    {
+     "at": 205,
+     "spawn": "rustling_scrapling",
+     "count": 28,
+     "gapS": 0.4
+    },
+    {
+     "at": 210,
+     "spawn": "rustling_heap",
+     "count": 16,
+     "gapS": 0.5
+    },
+    {
+     "at": 225,
+     "spawn": "spore_mite",
+     "count": 30,
+     "gapS": 0.4
+    }
+   ],
    "triggers": [],
    "composition": "Scraplings and Spore Mites, count rising every 20 s",
    "answers": "Mortar and Catapult behind Mossback",
@@ -31324,10 +31782,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.1600000000000001,
+   "anchor": "",
+   "eti": 4.19,
+   "ppi": 4.41,
+   "ratio": 0.95,
+   "targetRatio": 1.16,
    "hazard": ""
   },
   {
@@ -31340,12 +31799,59 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Enemies use your last loadout's stats as their roster",
+   "ruleParams": {
+    "mirror": true,
+    "note": "Stage AI deploys the player's last-used loadout at matching level on a 2 s decision tick; waves below are the fallback when no loadout history exists"
+   },
    "new": "",
    "enemyBaseHp": 39500,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 300,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "spore_capguard",
+     "count": 2,
+     "gapS": 3
+    },
+    {
+     "at": 40,
+     "spawn": "spore_mycelid",
+     "count": 2,
+     "gapS": 1.5
+    },
+    {
+     "at": 80,
+     "spawn": "spore_mite",
+     "count": 9,
+     "gapS": 0.5
+    },
+    {
+     "at": 120,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 160,
+     "spawn": "spore_brute",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 200,
+     "spawn": "spore_capguard",
+     "count": 2,
+     "gapS": 2.5
+    },
+    {
+     "at": 240,
+     "spawn": "spore_rotgolem",
+     "count": 1,
+     "gapS": 1.0
+    }
+   ],
    "triggers": [],
    "composition": "Your own 8 units at matching level, deployed by the stage AI",
    "answers": "Counter your own build: pick what beats it",
@@ -31356,10 +31862,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.1700000000000002,
+   "anchor": "",
+   "eti": 5.34,
+   "ppi": 4.41,
+   "ratio": 1.21,
+   "targetRatio": 1.17,
    "hazard": ""
   },
   {
@@ -31372,12 +31879,64 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "All your units have 1 knockback segment",
+   "ruleParams": {
+    "playerKbSegments": 1
+   },
    "new": "",
    "enemyBaseHp": 39500,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 300,
+   "waves": [
+    {
+     "at": 15,
+     "spawn": "rustling_clamper",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 40,
+     "spawn": "rustling_rustbucket",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 70,
+     "spawn": "spore_brute",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 100,
+     "spawn": "spore_shellcap",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 130,
+     "spawn": "rustling_clamper",
+     "count": 1,
+     "gapS": 4
+    },
+    {
+     "at": 170,
+     "spawn": "spore_brute",
+     "count": 1,
+     "gapS": 4
+    },
+    {
+     "at": 210,
+     "spawn": "spore_rotgolem",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 250,
+     "spawn": "rustling_clamper",
+     "count": 1,
+     "gapS": 3
+    }
+   ],
    "triggers": [],
    "composition": "World 1-2 brutes and walls",
    "answers": "Range and Area; never trade in melee",
@@ -31388,10 +31947,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.1800000000000002,
+   "anchor": "",
+   "eti": 5.81,
+   "ppi": 4.41,
+   "ratio": 1.32,
+   "targetRatio": 1.18,
    "hazard": ""
   },
   {
@@ -31404,12 +31964,53 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Starting cash 3,000, Bank frozen at level 1",
+   "ruleParams": {
+    "startCash": 3000,
+    "bankLocked": 1
+   },
    "new": "",
    "enemyBaseHp": 39500,
    "startCash": 3000,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 240,
+   "waves": [
+    {
+     "at": 30,
+     "spawn": "spore_eldercap",
+     "count": 2,
+     "gapS": 5
+    },
+    {
+     "at": 45,
+     "spawn": "spore_rotgolem",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 90,
+     "spawn": "spore_capguard",
+     "count": 2,
+     "gapS": 2.5
+    },
+    {
+     "at": 120,
+     "spawn": "spore_mite",
+     "count": 9,
+     "gapS": 0.5
+    },
+    {
+     "at": 160,
+     "spawn": "spore_eldercap",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 200,
+     "spawn": "spore_shellcap",
+     "count": 2,
+     "gapS": 3
+    }
+   ],
    "triggers": [],
    "composition": "Two Elder Caps and a Rot Golem at 30 s",
    "answers": "Spend it all right; no income to fix mistakes",
@@ -31420,10 +32021,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.1900000000000002,
+   "anchor": "Elder Cap, Elder Cap",
+   "eti": 5.22,
+   "ppi": 4.41,
+   "ratio": 1.18,
+   "targetRatio": 1.19,
    "hazard": ""
   },
   {
@@ -31436,12 +32038,33 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Boss rush: Rivet King then Bloomwarden, no normal enemies",
+   "ruleParams": {
+    "bossRush": [
+     "rustling_rivetking",
+     "spore_bloomwarden"
+    ],
+    "bossGapS": 20,
+    "note": "Second boss spawns 20 s after the first dies; the time below is the expected fallback"
+   },
    "new": "",
    "enemyBaseHp": 39500,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 360,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "rustling_rivetking",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 150,
+     "spawn": "spore_bloomwarden",
+     "count": 1,
+     "gapS": 1.0
+    }
+   ],
    "triggers": [],
    "composition": "Both mid-bosses back to back with 20 s between",
    "answers": "Stun and knockback to interrupt wind-ups",
@@ -31452,10 +32075,11 @@
    "cogs": 300,
    "unlock": "Juggernaut",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.2000000000000002,
+   "anchor": "Rivet King, Bloomwarden",
+   "eti": 0.0,
+   "ppi": 4.41,
+   "ratio": 0.0,
+   "targetRatio": 1.2,
    "hazard": ""
   },
   {
@@ -31468,13 +32092,86 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Anti-air units banned",
+   "ruleParams": {
+    "bannedTraits": [
+     "Anti-air"
+    ]
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 330,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "gear_bomber",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 30,
+     "spawn": "gear_tinsoldier",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 60,
+     "spawn": "gear_drone",
+     "count": 4,
+     "gapS": 1.2
+    },
+    {
+     "at": 90,
+     "spawn": "gear_zeppelin",
+     "count": 2,
+     "gapS": 1.0
+    },
+    {
+     "at": 120,
+     "spawn": "gear_bomber",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 150,
+     "spawn": "gear_tinsoldier",
+     "count": 4,
+     "gapS": 2.5
+    },
+    {
+     "at": 200,
+     "spawn": "gear_zeppelin",
+     "count": 4,
+     "gapS": 4
+    },
+    {
+     "at": 240,
+     "spawn": "rime_hailsprite",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 280,
+     "spawn": "gear_drone",
+     "count": 4,
+     "gapS": 1
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 2,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "gear_bomber",
+      "count": 3
+     }
+    }
+   ],
    "composition": "Bombers, Drones, Zeppelins over Tin Soldiers",
    "answers": "Rangers with Strong vs Flying only; Skyhook, Harpooner",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31484,10 +32181,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.2100000000000002,
+   "anchor": "",
+   "eti": 16.29,
+   "ppi": 25.4,
+   "ratio": 0.64,
+   "targetRatio": 1.21,
    "hazard": ""
   },
   {
@@ -31500,13 +32198,90 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Your Rangers and Barrage banned",
+   "ruleParams": {
+    "bannedRoles": [
+     "Ranger",
+     "Barrage"
+    ]
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 330,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 2
+    },
+    {
+     "at": 30,
+     "spawn": "rime_frostshell",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 70,
+     "spawn": "rime_sleetcaster",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 100,
+     "spawn": "rime_frostshell",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 130,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 170,
+     "spawn": "rime_glacierspear",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 220,
+     "spawn": "rime_sleetcaster",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 260,
+     "spawn": "rime_frostshell",
+     "count": 4,
+     "gapS": 2.5
+    },
+    {
+     "at": 290,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 1.5
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 3,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "rime_archer",
+      "count": 4,
+      "mods": [
+       "Hasty"
+      ]
+     }
+    }
+   ],
    "composition": "Archers and Sleet Casters behind Frostshells",
    "answers": "Fast Strikers and Rally to close the gap",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31516,10 +32291,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.2200000000000002,
+   "anchor": "",
+   "eti": 20.8,
+   "ppi": 25.4,
+   "ratio": 0.82,
+   "targetRatio": 1.22,
    "hazard": ""
   },
   {
@@ -31532,13 +32308,84 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Zone 2 permanently frozen",
+   "ruleParams": {
+    "hazardPermanent": "freezeZone2"
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 330,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 35,
+     "spawn": "rime_frostshell",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 65,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 2
+    },
+    {
+     "at": 100,
+     "spawn": "rime_snowdrift",
+     "count": 18,
+     "gapS": 0.5
+    },
+    {
+     "at": 135,
+     "spawn": "rime_frostbear",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 170,
+     "spawn": "rime_glacierspear",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 210,
+     "spawn": "rime_icicle",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 250,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 290,
+     "spawn": "rime_frostbear",
+     "count": 1,
+     "gapS": 1.0
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneLost": {
+       "zone": 1
+      }
+     },
+     "do": {
+      "spawn": "rime_icehound",
+      "count": 3
+     },
+     "once": true
+    }
+   ],
    "composition": "Rimeborn full mix",
    "answers": "Fight in Zone 1 and 3; Frost command to counter-freeze",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31548,11 +32395,12 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 17.81,
+   "ppi": 25.4,
+   "ratio": 0.7,
    "targetRatio": 1.23,
-   "hazard": ""
+   "hazard": "freezeZone2"
   },
   {
    "id": "trial_14",
@@ -31564,12 +32412,70 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Your base HP 2,000",
+   "ruleParams": {
+    "playerBaseHp": 2000
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 240,
+   "waves": [
+    {
+     "at": 5,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 0.8
+    },
+    {
+     "at": 25,
+     "spawn": "rime_icicle",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 45,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 0.8
+    },
+    {
+     "at": 70,
+     "spawn": "rime_icicle",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 95,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 0.7
+    },
+    {
+     "at": 120,
+     "spawn": "rime_icicle",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 150,
+     "spawn": "rime_frostbear",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 175,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 0.7
+    },
+    {
+     "at": 205,
+     "spawn": "rime_icicle",
+     "count": 18,
+     "gapS": 0.4
+    }
+   ],
    "triggers": [],
    "composition": "Ice Hounds and Icicle Swarms in bursts",
    "answers": "Scout screens every 10 s; Bulwark timing",
@@ -31580,10 +32486,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.2400000000000002,
+   "anchor": "",
+   "eti": 14.23,
+   "ppi": 25.4,
+   "ratio": 0.56,
+   "targetRatio": 1.24,
    "hazard": ""
   },
   {
@@ -31596,12 +32503,99 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Every enemy Hasty",
+   "ruleParams": {
+    "modifiersAll": [
+     "Hasty"
+    ]
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 330,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "gear_hopper",
+     "count": 4,
+     "gapS": 1,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 35,
+     "spawn": "gear_tinsoldier",
+     "count": 4,
+     "gapS": 3,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 65,
+     "spawn": "gear_swarm",
+     "count": 18,
+     "gapS": 0.5,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 95,
+     "spawn": "gear_bomber",
+     "count": 4,
+     "gapS": 1.5,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 130,
+     "spawn": "gear_knight",
+     "count": 3,
+     "gapS": 1,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 165,
+     "spawn": "gear_drone",
+     "count": 4,
+     "gapS": 1,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 200,
+     "spawn": "gear_hauler",
+     "count": 1,
+     "gapS": 1,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 240,
+     "spawn": "gear_pendulum",
+     "count": 3,
+     "gapS": 3,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 280,
+     "spawn": "gear_swarm",
+     "count": 18,
+     "gapS": 0.5,
+     "mods": [
+      "Hasty"
+     ]
+    }
+   ],
    "triggers": [],
    "composition": "Gearkin full mix at 1.4x speed",
    "answers": "Slow and Stun; Chanter, Frostbow",
@@ -31612,9 +32606,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 15.86,
+   "ppi": 25.4,
+   "ratio": 0.62,
    "targetRatio": 1.25,
    "hazard": ""
   },
@@ -31628,13 +32623,86 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "All enemies Armoured (tag added)",
+   "ruleParams": {
+    "tagAll": [
+     "Armoured"
+    ]
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 330,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "gear_hopper",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 35,
+     "spawn": "gear_swarm",
+     "count": 18,
+     "gapS": 0.5
+    },
+    {
+     "at": 65,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 95,
+     "spawn": "gear_tinsoldier",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 130,
+     "spawn": "rime_snowdrift",
+     "count": 18,
+     "gapS": 0.5
+    },
+    {
+     "at": 165,
+     "spawn": "gear_bomber",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 200,
+     "spawn": "rime_frostbear",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 240,
+     "spawn": "gear_hauler",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 280,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 1.5
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 2,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "gear_knight",
+      "count": 2
+     }
+    }
+   ],
    "composition": "World 3-4 mix with Armoured added to everything",
    "answers": "Pierce everything: Hammerhead, Spearhead, Volcanist",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31644,9 +32712,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 13.42,
+   "ppi": 25.4,
+   "ratio": 0.53,
    "targetRatio": 1.26,
    "hazard": ""
   },
@@ -31660,12 +32729,79 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Every third enemy is a Captain",
+   "ruleParams": {
+    "captainEveryNth": 3
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 330,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 35,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 2
+    },
+    {
+     "at": 65,
+     "spawn": "rime_frostshell",
+     "count": 4,
+     "gapS": 3,
+     "mods": [
+      "Captain"
+     ]
+    },
+    {
+     "at": 95,
+     "spawn": "rime_snowdrift",
+     "count": 18,
+     "gapS": 0.5
+    },
+    {
+     "at": 130,
+     "spawn": "rime_hailsprite",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 165,
+     "spawn": "rime_glacierspear",
+     "count": 4,
+     "gapS": 3,
+     "mods": [
+      "Captain"
+     ]
+    },
+    {
+     "at": 200,
+     "spawn": "rime_icicle",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 240,
+     "spawn": "rime_sleetcaster",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 280,
+     "spawn": "rime_frostbear",
+     "count": 1,
+     "gapS": 1,
+     "mods": [
+      "Captain"
+     ]
+    }
+   ],
    "triggers": [],
    "composition": "Mixed Rimeborn with Captain auras",
    "answers": "Kill Captains first with Rangers; Longshot Reach",
@@ -31676,9 +32812,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 17.24,
+   "ppi": 25.4,
+   "ratio": 0.68,
    "targetRatio": 1.27,
    "hazard": ""
   },
@@ -31692,13 +32829,88 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Night Shift rule plus Ranged enemies",
+   "ruleParams": {
+    "darkLane": true,
+    "visibleZones": [
+     1,
+     2
+    ]
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 330,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 2
+    },
+    {
+     "at": 40,
+     "spawn": "rime_sleetcaster",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 75,
+     "spawn": "rime_hailsprite",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 110,
+     "spawn": "rime_frostshell",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 145,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 180,
+     "spawn": "rime_glacierspear",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 220,
+     "spawn": "rime_sleetcaster",
+     "count": 4,
+     "gapS": 3
+    },
+    {
+     "at": 260,
+     "spawn": "rime_hailsprite",
+     "count": 4,
+     "gapS": 1.2
+    },
+    {
+     "at": 295,
+     "spawn": "rime_archer",
+     "count": 4,
+     "gapS": 1.5
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 2,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "rime_sleetcaster",
+      "count": 2
+     }
+    }
+   ],
    "composition": "Archers invisible until Zone 2",
    "answers": "Lamplighter reveals; Blizzardfang dives",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31708,9 +32920,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 17.9,
+   "ppi": 25.4,
+   "ratio": 0.7,
    "targetRatio": 1.28,
    "hazard": ""
   },
@@ -31724,13 +32937,106 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Zone capture time 1 s; zone bonuses tripled",
+   "ruleParams": {
+    "zoneCaptureS": 1,
+    "zoneBonusMultiplier": 3
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 300,
+   "waves": [
+    {
+     "at": 5,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 0.8
+    },
+    {
+     "at": 25,
+     "spawn": "gear_hopper",
+     "count": 4,
+     "gapS": 0.8
+    },
+    {
+     "at": 45,
+     "spawn": "rime_icicle",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 70,
+     "spawn": "gear_drone",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 95,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 0.8
+    },
+    {
+     "at": 120,
+     "spawn": "gear_hopper",
+     "count": 4,
+     "gapS": 0.8
+    },
+    {
+     "at": 150,
+     "spawn": "rime_icicle",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 180,
+     "spawn": "gear_drone",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 215,
+     "spawn": "rime_icehound",
+     "count": 4,
+     "gapS": 0.7
+    },
+    {
+     "at": 250,
+     "spawn": "rime_frostbear",
+     "count": 1,
+     "gapS": 1.0
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 2,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "gear_hopper",
+      "count": 3,
+      "mods": [
+       "Hasty"
+      ]
+     }
+    },
+    {
+     "when": {
+      "zoneLost": {
+       "zone": 1
+      }
+     },
+     "do": {
+      "spawn": "rime_icehound",
+      "count": 3
+     },
+     "once": true
+    }
+   ],
    "composition": "Fast waves contest the middle constantly",
    "answers": "Hold Zone 2 with Vanguards; income snowball",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31740,9 +33046,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 12.89,
+   "ppi": 25.4,
+   "ratio": 0.51,
    "targetRatio": 1.29,
    "hazard": ""
   },
@@ -31756,12 +33063,62 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Boss rush: Tin Admiral then Hoarfrost Warden",
+   "ruleParams": {
+    "bossRush": [
+     "gear_tinadmiral",
+     "rime_hoarfrost"
+    ],
+    "bossGapS": 20
+   },
    "new": "",
    "enemyBaseHp": 87700,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 420,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "gear_tinadmiral",
+     "count": 1,
+     "gapS": 1,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 40,
+     "spawn": "gear_bomber",
+     "count": 3,
+     "gapS": 1.5
+    },
+    {
+     "at": 100,
+     "spawn": "gear_drone",
+     "count": 3,
+     "gapS": 1
+    },
+    {
+     "at": 200,
+     "spawn": "rime_hoarfrost",
+     "count": 1,
+     "gapS": 1,
+     "mods": [
+      "Hasty"
+     ]
+    },
+    {
+     "at": 240,
+     "spawn": "rime_archer",
+     "count": 3,
+     "gapS": 2
+    },
+    {
+     "at": 300,
+     "spawn": "rime_frostshell",
+     "count": 2,
+     "gapS": 3
+    }
+   ],
    "triggers": [],
    "composition": "Both mid-bosses with Hasty",
    "answers": "Anti-air then anti-ranged; two loadout halves",
@@ -31772,9 +33129,10 @@
    "cogs": 300,
    "unlock": "Starfall",
    "cores": 0,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "Tin Admiral, Hoarfrost Warden",
+   "eti": 2.87,
+   "ppi": 25.4,
+   "ratio": 0.11,
    "targetRatio": 1.3,
    "hazard": ""
   },
@@ -31788,12 +33146,54 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Only Colossal enemies spawn",
+   "ruleParams": {
+    "onlyTags": [
+     "Colossal"
+    ]
+   },
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 420,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "cinder_golem",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 60,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 120,
+     "spawn": "cinder_obsidian",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 200,
+     "spawn": "crown_bulwark",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 260,
+     "spawn": "cinder_golem",
+     "count": 1,
+     "gapS": 8
+    },
+    {
+     "at": 330,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 8
+    }
+   ],
    "triggers": [],
    "composition": "Magma Golems, Obsidian Colossi, Juggernauts, Bulwarks",
    "answers": "Colossusbane, Stun, burst windows; Form III required in practice",
@@ -31804,9 +33204,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 107.02,
+   "ppi": 98.01,
+   "ratio": 1.09,
    "targetRatio": 1.32,
    "hazard": ""
   },
@@ -31820,12 +33221,142 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Enemies spawn in authored 3-tag formations only",
+   "ruleParams": {
+    "formationsOnly": true
+   },
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 420,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "crown_sentinel",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 10,
+     "spawn": "crown_archer",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 10,
+     "spawn": "crown_wing",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 70,
+     "spawn": "crown_lancer",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 70,
+     "spawn": "crown_swarm",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 70,
+     "spawn": "crown_archer",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 130,
+     "spawn": "crown_sentinel",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 130,
+     "spawn": "crown_paladin",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 130,
+     "spawn": "crown_hawk",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 190,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 190,
+     "spawn": "crown_archer",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 190,
+     "spawn": "crown_wing",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 250,
+     "spawn": "crown_sentinel",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 250,
+     "spawn": "crown_lancer",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 250,
+     "spawn": "crown_swarm",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 310,
+     "spawn": "crown_bulwark",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 310,
+     "spawn": "crown_paladin",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 310,
+     "spawn": "crown_hawk",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 370,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 370,
+     "spawn": "crown_sentinel",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 370,
+     "spawn": "crown_archer",
+     "count": 1,
+     "gapS": 1.0
+    }
+   ],
    "triggers": [],
    "composition": "Crown formations from stage 6-6 onward at 1.3x count",
    "answers": "Coverage of all tags in one loadout",
@@ -31836,9 +33367,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 105.34,
+   "ppi": 98.01,
+   "ratio": 1.07,
    "targetRatio": 1.34,
    "hazard": ""
   },
@@ -31852,13 +33384,98 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Vanguards banned",
+   "ruleParams": {
+    "bannedRoles": [
+     "Vanguard"
+    ]
+   },
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 390,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "crown_lancer",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 40,
+     "spawn": "crown_sentinel",
+     "count": 3,
+     "gapS": 3
+    },
+    {
+     "at": 75,
+     "spawn": "crown_swarm",
+     "count": 18,
+     "gapS": 0.5
+    },
+    {
+     "at": 110,
+     "spawn": "crown_archer",
+     "count": 4,
+     "gapS": 2
+    },
+    {
+     "at": 150,
+     "spawn": "crown_wing",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 190,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 240,
+     "spawn": "crown_sentinel",
+     "count": 4,
+     "gapS": 2.5
+    },
+    {
+     "at": 290,
+     "spawn": "crown_hawk",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 340,
+     "spawn": "crown_paladin",
+     "count": 3,
+     "gapS": 3
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 2,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "crown_lancer",
+      "count": 3
+     }
+    },
+    {
+     "when": {
+      "zoneLost": {
+       "zone": 1
+      }
+     },
+     "do": {
+      "spawn": "crown_swarm",
+      "count": 8
+     },
+     "once": true
+    }
+   ],
    "composition": "Crown pressure mix",
    "answers": "Knockback and Area to hold the line without a tank",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31868,9 +33485,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 77.02,
+   "ppi": 98.01,
+   "ratio": 0.79,
    "targetRatio": 1.36,
    "hazard": ""
   },
@@ -31884,12 +33502,71 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Units cost double; Command Meter charges 3x",
+   "ruleParams": {
+    "unitCostMultiplier": 2,
+    "meterRateMultiplier": 3
+   },
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 390,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "crown_lancer",
+     "count": 3,
+     "gapS": 1
+    },
+    {
+     "at": 45,
+     "spawn": "crown_sentinel",
+     "count": 3,
+     "gapS": 3
+    },
+    {
+     "at": 85,
+     "spawn": "crown_swarm",
+     "count": 17,
+     "gapS": 0.5
+    },
+    {
+     "at": 125,
+     "spawn": "crown_archer",
+     "count": 4,
+     "gapS": 2
+    },
+    {
+     "at": 170,
+     "spawn": "crown_wing",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 215,
+     "spawn": "crown_sentinel",
+     "count": 4,
+     "gapS": 2.5
+    },
+    {
+     "at": 260,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 310,
+     "spawn": "crown_hawk",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 355,
+     "spawn": "crown_paladin",
+     "count": 3,
+     "gapS": 3
+    }
+   ],
    "triggers": [],
    "composition": "Crown test mix",
    "answers": "Win with Commands: Blast, Beacon, Surge timing",
@@ -31900,10 +33577,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.3800000000000001,
+   "anchor": "",
+   "eti": 73.41,
+   "ppi": 98.01,
+   "ratio": 0.75,
+   "targetRatio": 1.38,
    "hazard": ""
   },
   {
@@ -31916,12 +33594,74 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Starfall-class damage on enemy side: every 30 s all your units take 500",
+   "ruleParams": {
+    "periodicDamage": {
+     "everyS": 30,
+     "damage": 500,
+     "target": "allPlayerUnits"
+    }
+   },
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 390,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "crown_paladin",
+     "count": 3,
+     "gapS": 3
+    },
+    {
+     "at": 50,
+     "spawn": "crown_lancer",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 90,
+     "spawn": "crown_sentinel",
+     "count": 3,
+     "gapS": 3
+    },
+    {
+     "at": 130,
+     "spawn": "crown_paladin",
+     "count": 3,
+     "gapS": 3
+    },
+    {
+     "at": 175,
+     "spawn": "crown_swarm",
+     "count": 17,
+     "gapS": 0.5
+    },
+    {
+     "at": 220,
+     "spawn": "crown_archer",
+     "count": 4,
+     "gapS": 2
+    },
+    {
+     "at": 265,
+     "spawn": "crown_paladin",
+     "count": 4,
+     "gapS": 2.5
+    },
+    {
+     "at": 310,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 355,
+     "spawn": "crown_hawk",
+     "count": 4,
+     "gapS": 1
+    }
+   ],
    "triggers": [],
    "composition": "Crown mix with Paladins",
    "answers": "Cheap wide boards; re-deploy after each rain",
@@ -31932,10 +33672,11 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
-   "targetRatio": 1.4000000000000001,
+   "anchor": "",
+   "eti": 90.5,
+   "ppi": 98.01,
+   "ratio": 0.92,
+   "targetRatio": 1.4,
    "hazard": ""
   },
   {
@@ -31948,13 +33689,83 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Twin Wardens with Hardened and Mending",
+   "ruleParams": {},
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
    "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "waves": [
+    {
+     "at": 20,
+     "spawn": "crown_twinwardens",
+     "count": 1,
+     "gapS": 1,
+     "mods": [
+      "Hardened",
+      "Mending"
+     ]
+    },
+    {
+     "at": 60,
+     "spawn": "crown_lancer",
+     "count": 4,
+     "gapS": 1
+    },
+    {
+     "at": 140,
+     "spawn": "crown_archer",
+     "count": 4,
+     "gapS": 2
+    },
+    {
+     "at": 220,
+     "spawn": "crown_wing",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 300,
+     "spawn": "crown_sentinel",
+     "count": 4,
+     "gapS": 2.5
+    },
+    {
+     "at": 380,
+     "spawn": "crown_swarm",
+     "count": 18,
+     "gapS": 0.5
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 2,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "crown_sentinel",
+      "count": 2
+     }
+    },
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 3,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "crown_hawk",
+      "count": 3,
+      "mods": [
+       "Hasty"
+      ]
+     }
+    }
+   ],
    "composition": "Both Wardens plus formation calls",
    "answers": "Split damage: Anti-air and Pierce halves",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -31964,9 +33775,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "The Twin Wardens",
+   "eti": 26.11,
+   "ppi": 98.01,
+   "ratio": 0.27,
    "targetRatio": 1.42,
    "hazard": ""
   },
@@ -31980,12 +33792,54 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Boss rush: all five world bosses from Worlds 1-5",
+   "ruleParams": {
+    "bossRush": [
+     "rustling_compactor",
+     "spore_mothercap",
+     "gear_clockmaster",
+     "rime_glacierhart",
+     "cinder_furnaceking"
+    ],
+    "bossGapS": 15,
+    "note": "Each boss spawns 15 s after the previous dies; times below are expected fallbacks"
+   },
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 600,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "rustling_compactor",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 110,
+     "spawn": "spore_mothercap",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 230,
+     "spawn": "gear_clockmaster",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 350,
+     "spawn": "rime_glacierhart",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 480,
+     "spawn": "cinder_furnaceking",
+     "count": 1,
+     "gapS": 1.0
+    }
+   ],
    "triggers": [],
    "composition": "Compactor, Mother Cap, Clockmaster, Glacier Hart, Furnace King in order",
    "answers": "Loadout that answers five bosses; Beacon to refresh",
@@ -31996,9 +33850,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "The Compactor, Mother Cap, The Clockmaster, Glacier Hart, Furnace King",
+   "eti": 0.0,
+   "ppi": 98.01,
+   "ratio": 0.0,
    "targetRatio": 1.44,
    "hazard": ""
   },
@@ -32012,12 +33867,77 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Income 0; bounties 200%",
+   "ruleParams": {
+    "incomeMultiplier": 0,
+    "bountyMultiplier": 2
+   },
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 390,
+   "waves": [
+    {
+     "at": 5,
+     "spawn": "crown_swarm",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 30,
+     "spawn": "crown_lancer",
+     "count": 4,
+     "gapS": 0.8
+    },
+    {
+     "at": 60,
+     "spawn": "crown_swarm",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 90,
+     "spawn": "crown_sentinel",
+     "count": 4,
+     "gapS": 2.5
+    },
+    {
+     "at": 125,
+     "spawn": "crown_swarm",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 160,
+     "spawn": "crown_archer",
+     "count": 4,
+     "gapS": 1.5
+    },
+    {
+     "at": 200,
+     "spawn": "crown_lancer",
+     "count": 4,
+     "gapS": 0.8
+    },
+    {
+     "at": 240,
+     "spawn": "crown_swarm",
+     "count": 18,
+     "gapS": 0.4
+    },
+    {
+     "at": 285,
+     "spawn": "crown_wing",
+     "count": 4,
+     "gapS": 1.2
+    },
+    {
+     "at": 330,
+     "spawn": "crown_sentinel",
+     "count": 4,
+     "gapS": 2
+    }
+   ],
    "triggers": [],
    "composition": "Crown mix in dense waves",
    "answers": "Kill to earn; Area and Scavenging Armory",
@@ -32028,9 +33948,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 47.91,
+   "ppi": 98.01,
+   "ratio": 0.49,
    "targetRatio": 1.46,
    "hazard": ""
   },
@@ -32044,12 +33965,130 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Lane 3,000; three enemy bases in sequence",
+   "ruleParams": {
+    "laneLength": 3000,
+    "enemyBases": [
+     40000,
+     60000,
+     80000
+    ],
+    "note": "Three enemy bases in sequence; the lane advances to the next base when one falls"
+   },
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
+   "targetDurationS": 540,
+   "waves": [
+    {
+     "at": 10,
+     "spawn": "crown_sentinel",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 10,
+     "spawn": "crown_archer",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 10,
+     "spawn": "crown_lancer",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 90,
+     "spawn": "crown_wing",
+     "count": 2,
+     "gapS": 1.0
+    },
+    {
+     "at": 90,
+     "spawn": "crown_swarm",
+     "count": 2,
+     "gapS": 1.0
+    },
+    {
+     "at": 90,
+     "spawn": "crown_sentinel",
+     "count": 2,
+     "gapS": 1.0
+    },
+    {
+     "at": 190,
+     "spawn": "crown_paladin",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 190,
+     "spawn": "crown_hawk",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 190,
+     "spawn": "crown_lancer",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 280,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 280,
+     "spawn": "crown_archer",
+     "count": 2,
+     "gapS": 1.0
+    },
+    {
+     "at": 280,
+     "spawn": "crown_swarm",
+     "count": 2,
+     "gapS": 1.0
+    },
+    {
+     "at": 380,
+     "spawn": "crown_bulwark",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 380,
+     "spawn": "crown_paladin",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 380,
+     "spawn": "crown_wing",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 470,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 1.0
+    },
+    {
+     "at": 470,
+     "spawn": "crown_sentinel",
+     "count": 2,
+     "gapS": 1.0
+    },
+    {
+     "at": 470,
+     "spawn": "crown_hawk",
+     "count": 2,
+     "gapS": 1.0
+    }
+   ],
    "triggers": [],
    "composition": "Formations at each base",
    "answers": "Breakers and sustained push; Rally",
@@ -32060,9 +34099,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "",
+   "eti": 85.2,
+   "ppi": 98.01,
+   "ratio": 0.87,
    "targetRatio": 1.48,
    "hazard": ""
   },
@@ -32076,13 +34116,115 @@
    "beat": "Trial",
    "campaign": "Trials",
    "rule": "Twin Wardens, all tags Hardened, Zone 3 locked to enemy",
+   "ruleParams": {
+    "modifiersAll": [
+     "Hardened"
+    ],
+    "zone3LockedToEnemy": true
+   },
    "new": "",
    "enemyBaseHp": 144000,
    "startCash": 0,
    "startBankLevel": 1,
-   "targetDurationS": 480,
-   "waves": [],
-   "triggers": [],
+   "targetDurationS": 540,
+   "waves": [
+    {
+     "at": 20,
+     "spawn": "crown_twinwardens",
+     "count": 1,
+     "gapS": 1,
+     "mods": [
+      "Hardened"
+     ]
+    },
+    {
+     "at": 60,
+     "spawn": "crown_sentinel",
+     "count": 4,
+     "gapS": 2.5,
+     "mods": [
+      "Hardened"
+     ]
+    },
+    {
+     "at": 140,
+     "spawn": "crown_archer",
+     "count": 4,
+     "gapS": 2,
+     "mods": [
+      "Hardened"
+     ]
+    },
+    {
+     "at": 220,
+     "spawn": "crown_juggernaut",
+     "count": 1,
+     "gapS": 1,
+     "mods": [
+      "Hardened"
+     ]
+    },
+    {
+     "at": 300,
+     "spawn": "crown_wing",
+     "count": 4,
+     "gapS": 1.5,
+     "mods": [
+      "Hardened"
+     ]
+    },
+    {
+     "at": 380,
+     "spawn": "crown_paladin",
+     "count": 4,
+     "gapS": 2.5,
+     "mods": [
+      "Hardened"
+     ]
+    },
+    {
+     "at": 460,
+     "spawn": "crown_bulwark",
+     "count": 1,
+     "gapS": 1,
+     "mods": [
+      "Hardened"
+     ]
+    }
+   ],
+   "triggers": [
+    {
+     "when": {
+      "zoneCaptured": {
+       "zone": 2,
+       "by": "player"
+      }
+     },
+     "do": {
+      "spawn": "crown_hawk",
+      "count": 3,
+      "mods": [
+       "Hardened",
+       "Hasty"
+      ]
+     }
+    },
+    {
+     "when": {
+      "zoneLost": {
+       "zone": 1
+      }
+     },
+     "do": {
+      "spawn": "crown_swarm",
+      "count": 12,
+      "mods": [
+       "Hardened"
+      ]
+     },
+     "once": true
+    }
+   ],
    "composition": "Final challenge",
    "answers": "Everything the campaign taught; Form III roster",
    "hint": "Trials show the rule on the stage card; the hint repeats the intended answer.",
@@ -32092,9 +34234,10 @@
    "cogs": 300,
    "unlock": "",
    "cores": 1,
-   "eti": "",
-   "ppi": "",
-   "ratio": "",
+   "anchor": "The Twin Wardens",
+   "eti": 73.97,
+   "ppi": 98.01,
+   "ratio": 0.75,
    "targetRatio": 1.5,
    "hazard": ""
   }

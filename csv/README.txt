@@ -20,3 +20,5 @@ Everything in blue on the Stages, Units and Enemies tabs is an authored input. B
 
 All names are placeholders pending trademark check (GDD 13.4).
 
+
+Trials (update): all 30 trials now carry authored wave scripts and a 'Rule parameters (JSON)' column on the Stages tab (loadoutSize, bannedRoles, playerBaseHp, laneLength, bossRush, winCondition, modifiersAll, etc.) for the rule interpreter. Counts were scaled toward a raw ETI/PPI of 1.0 (1.2 for Formation Drill, 1.3 for Summit Marathon); trials 11-19 land at 0.5-0.8 raw because per-kind count caps bind, and their rule supplies the rest of the difficulty. Boss rushes (10, 20, 27) and the survive trial (6) are left as authored. Tune in the editor against the simulator.
