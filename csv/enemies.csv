@@ -1,0 +1,73 @@
+ID,World,Family,Name,Tags,HP,KB segments,Damage,Interval s,Range,Speed,Value (bounty = 25%),Kind,Intro stage,Note
+rustling_tinman,1,Rustlings,Tinman,,120,1,15,1.2,40,35,40,chaff,1,First enemy; dies to anything
+rustling_runner,1,Rustlings,Runner,Fast,90,1,20,1,40,95,60,fast,5,Teaches blocking and Strong-vs-Fast
+rustling_scrapling,1,Rustlings,Scrapling,Swarm,40,1,8,0.9,35,50,15,swarm,6,Comes in 8s; teaches Area
+rustling_bolthound,1,Rustlings,Bolt Hound,Fast,220,2,45,1.4,45,85,110,fast,11,Fast with a second segment
+rustling_rustbucket,1,Rustlings,Rust Bucket,,900,4,30,2,45,25,220,wall,8,First wall; teaches Bank patience
+rustling_slingerscrap,1,Rustlings,Slinger Scrap,,150,1,35,2,190,35,120,ranged,13,Ranged preview before World 4
+rustling_clamper,1,Rustlings,Clamper,,400,2,120,3,50,40,180,brute,16,Big wind-up; teaches knockback interrupts
+rustling_heap,1,Rustlings,Heap,Swarm,60,1,12,1,35,45,20,swarm,21,Swarm with more HP
+rustling_scrapkite,1,Rustlings,Scrap Kite,,140,1,25,1.5,60,70,90,flying,23,"Flying preview (hovers, no tag yet)"
+rustling_junkgolem,1,Rustlings,Junk Golem,,1600,5,90,2.8,55,28,450,elite,10,Elite-formation anchor
+rustling_rivetking,1,Rustlings,Rivet King,,2500,6,60,2.5,50,30,600,mid,15,"Mid-boss, 2 phases"
+rustling_compactor,1,Rustlings,The Compactor,,9000,8,150,3,70,22,2000,boss,30,"World boss, 3 phases"
+spore_mite,2,Sporefolk,Spore Mite,Swarm,55,1,10,0.9,35,55,20,swarm,1,Armoured world opens with a familiar swarm
+spore_capguard,2,Sporefolk,Capguard,Armoured,420,4,38,1.6,45,35,160,armoured,2,The Armoured lesson: half damage without Pierce
+spore_mycelid,2,Sporefolk,Mycelid Runner,Fast,140,1,30,1,40,100,80,fast,4,"Fast, world 2 stats"
+spore_puffer,2,Sporefolk,Puffer,,260,2,20,2,60,30,110,chaff,6,Slows your units 20% in a cloud on death
+spore_shellcap,2,Sporefolk,Shellcap,Armoured,900,6,45,2.2,45,26,300,wall,11,Armoured wall
+spore_spitter,2,Sporefolk,Spore Spitter,,200,1,50,2,170,35,150,ranged,13,Short-range spitter behind walls
+spore_trufflehog,2,Sporefolk,Truffle Hog,"Fast, Armoured",360,2,70,1.4,45,80,220,fast,16,Twist: Fast and Armoured; needs Pierce on a fast hitter
+spore_brute,2,Sporefolk,Mushroom Brute,,650,3,170,3,55,38,260,brute,21,Heavy swing
+spore_rotgolem,2,Sporefolk,Rot Golem,Armoured,1400,5,90,2.6,55,25,420,big,23,Armoured big
+spore_eldercap,2,Sporefolk,Elder Cap,Armoured,2200,6,120,2.8,60,24,600,elite,10,Elite anchor
+spore_bloomwarden,2,Sporefolk,Bloomwarden,Armoured,3600,7,90,2.4,60,28,900,mid,15,"Mid-boss, spawns guards on knockback"
+spore_mothercap,2,Sporefolk,Mother Cap,Armoured,14000,9,210,3,75,20,2600,boss,30,"World boss, 3 phases"
+gear_hopper,3,Gearkin,Cog Hopper,Fast,190,1,40,1,40,100,100,fast,1,Fast opener
+gear_bomber,3,Gearkin,Wind-up Bomber,Flying,240,1,60,1.8,70,60,170,flying,2,The Flying lesson: melee without Anti-air cannot hit it
+gear_swarm,3,Gearkin,Gear Swarm,Swarm,70,1,14,0.9,35,55,25,swarm,4,Swarm
+gear_tinsoldier,3,Gearkin,Tin Soldier,Armoured,560,4,50,1.6,45,35,210,armoured,6,Armoured line infantry
+gear_drone,3,Gearkin,Brass Drone,"Flying, Fast",180,1,45,1.2,60,95,160,flying,11,Fast flier; Harpooner/Sparrow answer
+gear_knight,3,Gearkin,Clockwork Knight,Armoured,1200,6,70,2,50,30,380,wall,13,Armoured wall
+gear_zeppelin,3,Gearkin,Zeppelin Scout,Flying,900,3,90,2.4,110,45,420,flying,16,Big flier with range
+gear_hauler,3,Gearkin,Steam Hauler,,1900,6,110,2.6,55,26,520,big,21,Big pusher
+gear_pendulum,3,Gearkin,Pendulum Warden,,800,3,240,3.2,60,36,330,brute,23,Long wind-up; stun target
+gear_golem,3,Gearkin,Gear Golem,Armoured,3000,7,160,2.8,60,24,800,elite,10,Elite anchor
+gear_tinadmiral,3,Gearkin,Tin Admiral,Flying,4800,8,120,2.2,90,30,1200,mid,15,Mid-boss flier; drops bombers
+gear_clockmaster,3,Gearkin,The Clockmaster,,20000,10,260,3,200,22,3400,boss,30,"World boss, 3 phases"
+rime_archer,4,Rimeborn,Rimeborn Archer,Ranged,260,1,70,2,220,35,180,ranged,1,The Ranged lesson: out-ranges your frontline
+rime_frostshell,4,Rimeborn,Frostshell,Armoured,700,5,60,1.8,45,32,260,armoured,2,Armoured wall for archers to hide behind
+rime_snowdrift,4,Rimeborn,Snowdrift,Swarm,85,1,18,0.9,35,60,30,swarm,4,Swarm
+rime_icehound,4,Rimeborn,Ice Hound,Fast,260,2,60,1.2,45,105,140,fast,6,Fast
+rime_hailsprite,4,Rimeborn,Hail Sprite,Flying,320,1,80,1.6,80,65,220,flying,11,Flier
+rime_glacierspear,4,Rimeborn,Glacier Spear,"Ranged, Armoured",520,3,110,2.4,200,30,320,ranged,13,Twist: Armoured archer
+rime_frostbear,4,Rimeborn,Frost Bear,,2400,7,140,2.6,60,28,640,big,16,Big
+rime_sleetcaster,4,Rimeborn,Sleet Caster,Ranged,380,1,130,2.8,260,30,300,ranged,21,Long range caster; freezes a zone
+rime_icicle,4,Rimeborn,Icicle Swarm,"Swarm, Fast",60,1,22,0.9,35,95,35,swarm,23,Fast swarm
+rime_glaciergolem,4,Rimeborn,Glacier Golem,Armoured,3800,8,200,3,60,22,1000,elite,10,Elite anchor
+rime_hoarfrost,4,Rimeborn,Hoarfrost Warden,Ranged,6000,8,160,2.4,240,30,1500,mid,15,Mid-boss; freezes Zone 2 every 25s
+rime_glacierhart,4,Rimeborn,Glacier Hart,Ranged,27000,10,320,3,220,20,4200,boss,30,"World boss, 3 phases"
+cinder_hound,5,Cinderbrood,Forge Hound,Fast,360,2,80,1.1,45,105,190,fast,1,Fast opener
+cinder_golem,5,Cinderbrood,Magma Golem,Colossal,3600,12,220,3,65,22,900,colossal,2,The Colossal lesson: knockback-immune until its last 3 segments
+cinder_mite,5,Cinderbrood,Cinder Mite,Swarm,110,1,24,0.9,35,60,40,swarm,4,Swarm
+cinder_slagknight,5,Cinderbrood,Slag Knight,Armoured,1000,5,90,1.8,50,32,360,armoured,6,Armoured
+cinder_wisp,5,Cinderbrood,Ember Wisp,Flying,420,1,100,1.5,80,70,280,flying,11,Flier
+cinder_spitter,5,Cinderbrood,Lava Spitter,Ranged,480,1,150,2.4,230,32,340,ranged,13,Ranged
+cinder_keeper,5,Cinderbrood,Furnace Keeper,"Armoured, Ranged",900,4,170,2.6,210,28,520,ranged,16,Twist: Armoured ranged
+cinder_ashbrute,5,Cinderbrood,Ash Brute,,1500,4,360,3.2,60,38,560,brute,21,Brute
+cinder_obsidian,5,Cinderbrood,Obsidian Colossus,"Colossal, Armoured",6000,14,300,3.2,70,20,1600,colossal,23,Colossal and Armoured
+cinder_pyrewarden,5,Cinderbrood,Pyre Warden,Armoured,5000,9,260,3,65,22,1300,elite,10,Elite anchor
+cinder_slagtitan,5,Cinderbrood,Slag Titan,Colossal,9000,12,240,2.8,70,24,2200,mid,15,Mid-boss; lava pulse on Zone 2
+cinder_furnaceking,5,Cinderbrood,Furnace King,Colossal,36000,14,420,3.2,80,18,5600,boss,30,"World boss, 3 phases"
+crown_sentinel,6,Wardens,Crown Sentinel,Armoured,1300,6,120,1.8,50,32,460,armoured,1,Formation anchor
+crown_lancer,6,Wardens,Crown Lancer,Fast,520,2,130,1.1,50,105,280,fast,1,Formation runner
+crown_archer,6,Wardens,Crown Archer,Ranged,600,1,190,2.2,240,32,420,ranged,2,Formation archer
+crown_wing,6,Wardens,Crown Wing,Flying,600,1,150,1.5,80,70,400,flying,4,Formation flier
+crown_swarm,6,Wardens,Crown Swarm,Swarm,150,1,32,0.9,35,60,55,swarm,6,Formation swarm
+crown_juggernaut,6,Wardens,Crown Juggernaut,Colossal,7000,14,360,3,70,20,1900,colossal,11,Formation colossal
+crown_paladin,6,Wardens,Crown Paladin,"Armoured, Ranged",1400,5,220,2.4,220,28,700,ranged,13,Armoured ranged
+crown_hawk,6,Wardens,Crown Hawk,"Flying, Fast",480,1,140,1.2,60,100,380,flying,16,Fast flier
+crown_bulwark,6,Wardens,Crown Bulwark,"Colossal, Armoured",9000,16,400,3.4,75,18,2400,colossal,21,The wall of walls
+crown_champion,6,Wardens,Crown Champion,Armoured,6500,10,340,2.8,70,24,1800,elite,10,Elite anchor
+crown_wardenprime,6,Wardens,Warden Prime,"Armoured, Ranged",12000,12,300,2.4,230,24,3000,mid,15,Mid-boss; calls every family once
+crown_twinwardens,6,Wardens,The Twin Wardens,"Armoured, Flying",24000,12,480,3,90,22,8000,boss,30,"Two bosses, no shared HP"

@@ -1,0 +1,41 @@
+Unit,Role,Cost,Cooldown s,HP (L1),KB segments,Damage (L1),Interval s,Wind-up s,Range,Speed,Area,Traits,Unlock source,Form II (level 10),Form III (level 20 + Core)
+Scrap,Scout,50,2,100,1,20,1,0.2,40,60,False,,Stage 1-1,Knockback 15%,Scrap III: Rush; costs 40
+Brute,Striker,150,6,400,2,90,1.5,0.5,45,50,False,,Stage 1-1,Strong vs Fast,Brute III: Area melee swing
+Boulder,Vanguard,300,10,1800,6,25,2,0.6,40,30,False,,Stage 1-2,Knockback 20%,Boulder III: Area attack; taunts enemies in range
+Slinger,Ranger,250,8,180,1,70,1.8,0.4,220,45,False,,Stage 1-3,Slow 30% 2s,Slinger III: Reach
+Mortar,Barrage,600,18,220,2,160,3,1.2,300,30,True,,Stage 1-6,Strong vs Swarm,Mortar III: Knockback 100% on hit
+Chanter,Support,400,15,300,2,10,2,0.3,180,35,True,Slow 100% 2s,Stage 1-10,Slow lasts 3s,Chanter III: Stun 20% 1s
+Ram,Breaker,900,25,1200,3,400,4,1.5,60,55,False,Rush; 3x vs base,Stage 1-15,Resist Armoured,Ram III: Pierce; 4x vs base
+Ironhide,Vanguard,800,22,4000,8,40,2.5,0.7,45,25,False,Resist Armoured,Stage 1-20,Resist Swarm,Ironhide III: Reflects 10% damage taken as Area damage
+Lancer,Striker,350,9,350,2,150,2.2,0.7,90,60,False,Strong vs Fast,Stage 1-24,Knockback 25%,Lancer III: Reach (line thrust)
+Skyhook,Ranger,450,12,200,1,90,1.6,0.4,240,45,False,Strong vs Flying,Stage 1-27,Knockback 20% vs Flying,Skyhook III: pulls Flying targets to ground for 3s
+Hammerhead,Striker,700,20,900,3,320,3,1.1,50,40,False,Pierce,Stage 1-30 (boss),Strong vs Armoured,Hammerhead III: Stun 30% 1.5s
+Lantern,Support,500,16,250,2,0,2,0.3,200,35,True,Aura: enemies in range deal -30%,"Cog shop (1,500)",Aura -40%,Lantern III: aura also slows 20%
+Pebble,Scout,80,3,160,2,15,1,0.2,40,55,False,Resist Armoured,"Cog shop (2,000)",Knockback 10%,Pebble III: explodes for 200 Area on death
+Spearhead,Striker,450,12,500,2,180,2.4,0.8,70,55,False,Pierce; Strong vs Armoured,Stage 2-4,Rush,Spearhead III: Reach
+Mossback,Vanguard,550,18,2800,7,30,2.2,0.6,40,28,False,Resist Swarm,Stage 2-8,Regenerates 1%/s out of combat,Mossback III: Area thorns 40 dmg per hit taken
+Longshot,Ranger,650,16,160,1,110,2.6,0.9,320,40,False,Reach,Stage 2-18,Strong vs Ranged,Longshot III: Pierce
+Catapult,Barrage,750,20,260,2,220,3.4,1.4,280,30,True,Strong vs Swarm,Stage 2-24,Knockback 30%,Catapult III: two volleys per attack
+Sparrow,Scout,120,3,140,1,25,0.9,0.2,60,70,False,Anti-air,Stage 3-4,Strong vs Flying,Sparrow III: Rush; costs 90
+Skyreaver,Striker,600,15,650,3,210,2,0.6,80,60,False,Anti-air; Strong vs Flying,Stage 3-8,Knockback 30% vs Flying,Skyreaver III: Area vs Flying
+Gearwall,Vanguard,1000,26,5200,9,50,2.8,0.8,50,24,False,Resist Flying,Stage 3-12,Resist Ranged,"Gearwall III: Bulwark-like shield 2,000 on deploy"
+Harpooner,Ranger,700,18,220,1,140,2.2,0.7,260,40,False,Strong vs Flying; Knockback 40%,"Cog shop (2,500)",Anti-air,Harpooner III: Stun 25% 1s
+Flak,Barrage,900,24,240,2,120,1.8,0.6,260,30,True,Anti-air; Strong vs Flying,"Cog shop (3,000)",Strong vs Swarm,Flak III: Reach
+Snowpup,Scout,100,3,120,1,30,0.9,0.2,45,85,False,Strong vs Fast,Stage 4-2,Slow 20% 1s,Snowpup III: Rush
+Blizzardfang,Striker,800,18,900,3,300,2,0.6,100,75,False,Strong vs Ranged; Rush,Stage 4-11,Resist Ranged,Blizzardfang III: Reach
+Frostbow,Ranger,850,20,240,1,160,2,0.6,280,40,False,Slow 60% 3s,Stage 4-25,Strong vs Fast,Frostbow III: Stun 30% 1.5s (stops wind-ups)
+Hailstorm,Barrage,1100,28,280,2,260,3.2,1.2,300,28,True,Slow 40% 2s,"Cog shop (3,500)",Strong vs Ranged,Hailstorm III: Stun 20% 1s
+Volcanist,Barrage,1400,30,320,2,420,3.6,1.5,260,26,True,Pierce,Stage 5-6,Strong vs Armoured,Volcanist III: burn 5% HP over 4s
+Colossusbane,Striker,1600,32,1400,4,700,3.4,1.3,60,45,False,Strong vs Colossal; Stun 30% 1s,Stage 5-22,Pierce,Colossusbane III: Reach
+Obsidian,Vanguard,1800,36,8000,10,80,3,0.9,55,22,False,Rush; Resist Colossal,Achievement: Unbroken (win 20 stages with base above 90%),Taunt,Obsidian III: Area quake knockback every 10s
+Cinderling,Scout,150,4,180,2,40,0.8,0.2,45,65,False,Volatile: 150 Area on death,Achievement: Rapid Deployer (deploy 500 Scouts),Strong vs Swarm,Cinderling III: Rush
+Sunlance,Ranger,1500,28,300,1,260,2.2,0.7,340,38,False,Reach; Pierce,Stage 6-12,Strong vs Colossal,Sunlance III: Stun 20% 1s
+Starfall,Barrage,2200,40,360,2,900,4.5,2,320,24,True,Knockback 100%,Trial 20,Strong vs Armoured,Starfall III: hits twice
+Juggernaut,Breaker,2000,45,3000,5,900,4,1.6,70,50,False,Rush; Pierce; 3x vs base,Trial 10,Resist Ranged,Juggernaut III: 5x vs base
+Bellringer,Support,1200,30,400,3,0,2.5,0.5,220,32,True,Stun 20% 1s aura pulse,"Cog shop (4,000)",Pulse every 2s,Bellringer III: pulse also slows 30%
+Tinker,Support,350,12,260,2,20,2,0.4,160,40,True,Aura: allies in range +15% attack speed,Side campaign 1 (Scrap Rush),+25%,Tinker III: aura also heals 2%/s
+Sporeknight,Vanguard,700,20,3600,8,45,2.4,0.7,45,27,False,Resist Armoured; Resist Swarm,Side campaign 2 (Deep Hollows),Spore cloud slows 20%,Sporeknight III: spawns 2 Scraps on death
+Lamplighter,Ranger,600,15,200,1,100,1.8,0.5,250,42,False,Reveals hidden enemies; Strong vs Flying,Side campaign 3 (Night Shift),Slow 30%,Lamplighter III: Reach
+Icebreaker,Breaker,1300,34,1800,4,600,3.8,1.4,65,52,False,Rush; Pierce; 3x vs base,Side campaign 4 (Whiteout),Resist Armoured,Icebreaker III: Stun 40% on base hit
+Ashwalker,Striker,1000,22,1100,3,380,2.2,0.7,70,58,False,Strong vs Colossal; burn 3% HP over 3s,Side campaign 5 (Slag Pits),Pierce,Ashwalker III: Area
+Crownbearer,Vanguard,2400,48,9000,10,120,3,1,60,22,False,Resist Armoured; Resist Colossal; Taunt,Side campaign 6 (Warden's Gauntlet),Reflect 10%,Crownbearer III: allies in range take -20%
