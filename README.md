@@ -41,3 +41,7 @@ https://raw.githubusercontent.com/zaid-replkt/pushline-design/main/production_ti
 - A stage's `waves[]` entries are `{at, spawn, count, gapS, mods?}`; `spawn` resolves against `enemies[].id`.
 - `triggers[]` are `{when, do, once?}`; `when` is one of `zoneCaptured{zone,by}`, `zoneLost{zone}`, `enemyBaseHpBelow`; `do` is `spawn{...}`, `hazard` or `shockwave`.
 - Threat (ETI) and power (PPI) definitions are in `csv/README.txt` and GDD 9.1-9.3. Boss, mid-boss and elite anchors are excluded from ETI and tuned in the simulator (GDD 9.4).
+
+## Small files (for agents whose fetch truncates)
+
+Every file above is also split into parts under `small/`, each under 9,500 characters. Start at `small/INDEX.md` (all URLs) or `small/manifest.json` (machine-readable).

@@ -1,0 +1,31 @@
+#,Name,Unlocks,Rule,Composition,Intended answer,Unit reward,Cores,XP,Cogs,Target ratio
+1,Six Cards,After World 2,Loadout of 6 cards,"World 2 pressure mix: Capguards, Mycelids, Spore Mites, Shellcap at 60 s",Pick two Pierce units and a Barrage; skip Support,,0,3000,300,1.11
+2,Flatline,After World 2,Bank upgrades disabled; income fixed at level 3,World 1-2 chaff and walls on a slow drip,Cheap units in volume; Scrap and Pebble spam,,0,3000,300,1.12
+3,Sprint,After World 2,"Enemy base 5,000 HP; your base 1,000 HP",Runner and Mycelid waves every 15 s,Breaker rush with Scout screens,,0,3000,300,1.13
+4,Silence,After World 2,No Commands; zone bonuses doubled,World 2 test mix with Zone 2 trigger reinforcements,Take and hold Zone 2 early,,0,3000,300,1.14
+5,Long March,After World 2,"Lane length 2,000",Rust Buckets and Shellcaps spaced along the lane,Vanguard chain; Rally once unlocked,,0,3000,300,1.15
+6,Rust Tide,After World 2,Endless Swarm; win by surviving 240 s,"Scraplings and Spore Mites, count rising every 20 s",Mortar and Catapult behind Mossback,,0,3000,300,1.16
+7,Mirror,After World 2,Enemies use your last loadout's stats as their roster,"Your own 8 units at matching level, deployed by the stage AI",Counter your own build: pick what beats it,,0,3000,300,1.17
+8,Glass Cannon,After World 2,All your units have 1 knockback segment,World 1-2 brutes and walls,Range and Area; never trade in melee,,0,3000,300,1.18
+9,Pennies,After World 2,"Starting cash 3,000, Bank frozen at level 1",Two Elder Caps and a Rot Golem at 30 s,Spend it all right; no income to fix mistakes,,0,3000,300,1.19
+10,Clamp Down,After World 2,"Boss rush: Rivet King then Bloomwarden, no normal enemies",Both mid-bosses back to back with 20 s between,Stun and knockback to interrupt wind-ups,Juggernaut,0,3000,300,1.2
+11,Grounded,After World 4,Anti-air units banned,"Bombers, Drones, Zeppelins over Tin Soldiers","Rangers with Strong vs Flying only; Skyhook, Harpooner",,0,3000,300,1.21
+12,Out-ranged,After World 4,Your Rangers and Barrage banned,Archers and Sleet Casters behind Frostshells,Fast Strikers and Rally to close the gap,,0,3000,300,1.22
+13,Cold Snap,After World 4,Zone 2 permanently frozen,Rimeborn full mix,Fight in Zone 1 and 3; Frost command to counter-freeze,,0,3000,300,1.23
+14,Thin Ice,After World 4,"Your base HP 2,000",Ice Hounds and Icicle Swarms in bursts,Scout screens every 10 s; Bulwark timing,,0,3000,300,1.24
+15,Clockwork,After World 4,Every enemy Hasty,Gearkin full mix at 1.4x speed,"Slow and Stun; Chanter, Frostbow",,0,3000,300,1.25
+16,Heavy Metal,After World 4,All enemies Armoured (tag added),World 3-4 mix with Armoured added to everything,"Pierce everything: Hammerhead, Spearhead, Volcanist",,0,3000,300,1.26
+17,Captains,After World 4,Every third enemy is a Captain,Mixed Rimeborn with Captain auras,Kill Captains first with Rangers; Longshot Reach,,0,3000,300,1.27
+18,Blackout,After World 4,Night Shift rule plus Ranged enemies,Archers invisible until Zone 2,Lamplighter reveals; Blizzardfang dives,,0,3000,300,1.28
+19,Tug of War,After World 4,Zone capture time 1 s; zone bonuses tripled,Fast waves contest the middle constantly,Hold Zone 2 with Vanguards; income snowball,,0,3000,300,1.29
+20,Admiral's Return,After World 4,Boss rush: Tin Admiral then Hoarfrost Warden,Both mid-bosses with Hasty,Anti-air then anti-ranged; two loadout halves,Starfall,0,3000,300,1.3
+21,Colossal,After World 6,Only Colossal enemies spawn,"Magma Golems, Obsidian Colossi, Juggernauts, Bulwarks","Colossusbane, Stun, burst windows; Form III required in practice",,1,3000,300,1.32
+22,Formation Drill,After World 6,Enemies spawn in authored 3-tag formations only,Crown formations from stage 6-6 onward at 1.3x count,Coverage of all tags in one loadout,,1,3000,300,1.34
+23,No Vanguard,After World 6,Vanguards banned,Crown pressure mix,Knockback and Area to hold the line without a tank,,1,3000,300,1.36
+24,Meter Only,After World 6,Units cost double; Command Meter charges 3x,Crown test mix,"Win with Commands: Blast, Beacon, Surge timing",,1,3000,300,1.38
+25,Iron Rain,After World 6,Starfall-class damage on enemy side: every 30 s all your units take 500,Crown mix with Paladins,Cheap wide boards; re-deploy after each rain,,1,3000,300,1.4
+26,Twin Rehearsal II,After World 6,Twin Wardens with Hardened and Mending,Both Wardens plus formation calls,Split damage: Anti-air and Pierce halves,,1,3000,300,1.42
+27,Pentad,After World 6,Boss rush: all five world bosses from Worlds 1-5,"Compactor, Mother Cap, Clockmaster, Glacier Hart, Furnace King in order",Loadout that answers five bosses; Beacon to refresh,,1,3000,300,1.44
+28,Zero Bank,After World 6,Income 0; bounties 200%,Crown mix in dense waves,Kill to earn; Area and Scavenging Armory,,1,3000,300,1.46
+29,Summit Marathon,After World 6,"Lane 3,000; three enemy bases in sequence",Formations at each base,Breakers and sustained push; Rally,,1,3000,300,1.48
+30,The Crownless,After World 6,"Twin Wardens, all tags Hardened, Zone 3 locked to enemy",Final challenge,Everything the campaign taught; Form III roster,,1,3000,300,1.5

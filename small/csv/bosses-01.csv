@@ -1,0 +1,13 @@
+Boss,World,Stage,HP,Phase 1,Phase 2 (60% / 50% for mid-bosses),Phase 3 (25%),Entrance,First-clear Cores
+Rivet King,1,15,2500,"Slow swings, 6 segments",Summons 4 Scraplings every 15 s,,Walks in at 20 s,1
+The Compactor,1,30,9000,"Slow Colossal-lite, 8 segments, wide swing",Summons 6 Swarm Rustlings every 20 s,"Charges: Fast for 5 s, then exhausted 5 s",Spawns when enemy base drops below 80%,3
+Bloomwarden,2,15,3600,"Armoured, slow",Spawns 2 Capguards on each knockback,,Walks in at 20 s,1
+Mother Cap,2,30,14000,"Armoured, spore cloud slows Zone 2",Spawns 3 Armoured guards on each knockback,Heals 10% once at 30%,Spawns when enemy base drops below 80%,3
+Tin Admiral,3,15,4800,"Flying, ranged",Drops 3 Wind-up Bombers every 20 s,,Walks in at 20 s; shockwave,1
+The Clockmaster,3,30,20000,Ranged ticking shots,Airship drops 4 Flying bombers,Rewinds: teleports to Zone 3 and reclaims it,Below 80%; shockwave,3
+Hoarfrost Warden,4,15,6000,Ranged; freezes Zone 2 for 4 s every 25 s,Freeze also hits Zone 1,,Walks in at 20 s; shockwave,1
+Glacier Hart,4,30,27000,"Ranged, freezes a zone for 4 s",Ice wall at Zone 2 (your side must break it),"Blizzard: all units -50% speed, 8 s",Below 80%; shockwave,3
+Slag Titan,5,15,9000,Colossal; lava pulse on Zone 2 every 20 s,+30% attack speed,,Walks in at 20 s; shockwave,1
+Furnace King,5,30,36000,"Colossal, pushes frontline",Lava pulse damages Zone 2 every 15 s,"Overheat: +50% attack speed, takes 2x damage",Below 80%; shockwave,3
+Warden Prime,6,15,12000,"Armoured, ranged",Calls one of each family once,,Walks in at 20 s; shockwave,1
+The Twin Wardens,6,30,2 x 24000,"Two bosses, one Armoured one Flying, no shared HP",Whichever is alive gains the other's tag,Formation: calls every family once,Below 80%; shockwave,3
